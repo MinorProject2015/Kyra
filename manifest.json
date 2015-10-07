@@ -1,0 +1,51 @@
+
+{
+	"manifest_version" : 2,
+	"name" : "Password Manager",
+	"version" : "1.0",
+	
+	// "default_locale" : "en",
+	"description" : "Cloud based password manager",
+	
+	
+	"browser_action" : { 
+		"default_icon" : {
+			"38" : "images/icon38.png"
+		},
+		"default_title" : "Password Manager",
+		"default_popup" : "popup.html"	
+	},
+	
+	"author" : "Puranjay Sharma & John Sundharam",
+	
+	/*
+	"background" : {
+		"scripts" : ["bgscript.js"]
+	}
+	*/
+	
+	/*
+	"content_scripts" : {
+		"matches" : ["*"],
+		"css" : ["pmstyle.css"],
+		"js" : ["pmscript.js"]
+	}
+	*/
+	
+	// "homepage_url" : "www.github.com/kyra"
+	
+	"offline_enabled" : false,
+	
+	/*
+	"options_page" : "kyraoptions.html",
+	"options_ui" : {
+		"chrome_style" : true,
+		"page" : "kyraoptions.html"
+	},
+	*/
+	
+	"permissions" : ["tabs", "clipboardRead", "clipboardWrite", "contextMenus"],
+	
+	"short_name" : "Kyra"	
+	
+}
