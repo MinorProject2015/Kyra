@@ -24,13 +24,15 @@
 	}
 	*/
 	
-	/*
-	"content_scripts" : {
-		"matches" : ["*"],
-		"css" : ["pmstyle.css"],
+	//	"css" : ["pmstyle.css"],
+	
+	"content_scripts" : [
+		{
+		"matches" : ["http://*/*"],
 		"js" : ["pmscript.js"]
-	}
-	*/
+		}
+	],
+	
 	
 	// "homepage_url" : "www.github.com/kyra"
 	
@@ -44,7 +46,7 @@
 	},
 	*/
 	
-	"permissions" : ["tabs", "clipboardRead", "clipboardWrite", "contextMenus"],
+	"permissions" : ["tabs", "clipboardRead", "clipboardWrite", "contextMenus",  "http://*/*","https://*/*"],
 	
 	"short_name" : "Kyra"	
 	
